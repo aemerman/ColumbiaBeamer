@@ -32,9 +32,10 @@
 \setbeamertemplate{title page}
 {
 	% IEOR logo
-	\ifthenelse{\equal{\sbtitle}{}}
-	{\vspace{-2.2mm}}
-	{\vspace{-1mm}}
+	%\ifthenelse{\equal{\subtitle}{}}
+	%{\vspace{-2.2mm}}
+	%{\vspace{-1mm}}
+	\vspace{-1mm}
 	\hbox{\hskip -10mm
 	\begin{beamercolorbox}[wd = 0.1\paperwidth, ht = 6ex, dp = .7ex, left]{logo bar}
 		\hskip 1ex
@@ -73,7 +74,7 @@
 	\end{beamercolorbox}
 
 	% authors
-	\vskip1em\par
+	\vskip 1em\par
 	\begin{beamercolorbox}[sep = 8pt, center]{author}
 	\usebeamerfont{author}\insertauthor
 	\end{beamercolorbox}
@@ -89,7 +90,7 @@
 	\begin{beamercolorbox}[sep = 8pt, center]{date}
 	\usebeamerfont{date}\insertdate
 	\end{beamercolorbox}
-	\vskip0.5em
+	\vskip 0.5em
 
 	\end{centering}
 	\vfill
