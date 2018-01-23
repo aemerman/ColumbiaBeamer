@@ -32,49 +32,28 @@
 \setbeamertemplate{title page}
 {
 	% IEOR logo
-	%\ifthenelse{\equal{\subtitle}{}}
-	%{\vspace{-2.2mm}}
-	%{\vspace{-1mm}}
-	\vspace{-1mm}
-	\hbox{\hskip -10mm
-	\begin{beamercolorbox}[wd = 0.1\paperwidth, ht = 6ex, dp = .7ex, left]{logo bar}
-		\hskip 1ex
-		\vspace{1mm}
-		\includegraphics[width = 6mm]{style/fig/SeasCrown_white}
+%	\ifthenelse{\equal{\sbtitle}{}}
+
+%	{\vspace{-1mm}}
+	\begin{beamercolorbox}[wd = \paperwidth, ht = 6ex, dp = .7ex, left]{logo bar}
+        \vspace{2.1mm}{\includegraphics[width = 50mm, height= 8mm]{style/fig/header.png}}
 	\end{beamercolorbox}
-	\hskip -3mm
-	\begin{beamercolorbox}[wd = 0.75\paperwidth, ht = 6ex, dp = .7ex, left]{logo bar}
-		\newline
-		\scriptsize{Bionet Group}
-		\newline
-		\scriptsize{Fu Fundation School of Engineering and Applied Science}
-		\newline
-		\scriptsize{Columbia University}
-	\end{beamercolorbox}
-	\hskip -3mm
-	\begin{beamercolorbox}[wd = 0.3\paperwidth, ht = 6ex, dp = .7ex, left]{logo bar}
-		\hskip 1ex
-		\vspace{1mm}
-		\includegraphics[width = 20mm]{style/fig/bionet_logo.png}
-	\end{beamercolorbox}
-	}
+    {\vskip20mm}
 
 	% center stuff from now onwards
-	\vbox{}
-	\vfill
 	\begin{centering}
 
 	% title and subtitle
 	\begin{beamercolorbox}[wd = \paperwidth, sep = 8pt, center]{title}
 	\usebeamerfont{title}\inserttitle\\
-	\usebeamerfont{subtitle}\insertsubtitle
+	\usebeamerfont{subtitle}\insertsubtitle%
 	\end{beamercolorbox}
 	\vskip-1.18em\par
 	\begin{beamercolorbox}[wd = \paperwidth, ht = 1pt]{logo bar}
 	\end{beamercolorbox}
 
 	% authors
-	\vskip 1em\par
+	\vskip1em\par
 	\begin{beamercolorbox}[sep = 8pt, center]{author}
 	\usebeamerfont{author}\insertauthor
 	\end{beamercolorbox}
@@ -90,12 +69,13 @@
 	\begin{beamercolorbox}[sep = 8pt, center]{date}
 	\usebeamerfont{date}\insertdate
 	\end{beamercolorbox}
-	\vskip 0.5em
+	\vskip0.5em
 
 	\end{centering}
 	\vfill
 
 %	\vskip 6em\par
+    \date{\today}
 %	\hbox{
 %	\begin{beamercolorbox}[wd = .5\paperwidth, sep = 8pt, left]{date}
 %	\hskip -8mm
@@ -108,6 +88,7 @@
 %	\ifthenelse{\equal{\showver}{1}}
 %	{\tiny{v.\ver~(b.\build)}}
 %	{\tiny{\textcolor{white}{v.\ver~(b.\build)}}}
+\pgfuseimage{bkglogo}
 %	\end{beamercolorbox}
 %	}
 }
@@ -163,11 +144,11 @@
 	% SEAS logo
 	\begin{beamercolorbox}[wd = .02\paperwidth, ht = 2.75ex, dp = 1.5ex, right]{text in head/foot}
 	\vspace{-0.2ex}
-	\includegraphics[width = 0.15cm]{style/fig/SeasCrown_blue}
+	\includegraphics[width = 0.4cm]{style/fig/SeasCrown_blue}
 	\end{beamercolorbox}
 
 	% authors box
-	\begin{beamercolorbox}[wd = .23\paperwidth, ht = 2.75ex, dp = 1.5ex, left]{text in head/foot}
+	\begin{beamercolorbox}[wd = .25\paperwidth, ht = 2.75ex, dp = 1.5ex, left]{text in head/foot}
 	\usebeamerfont{text in head/foot}\insertshortauthor
 	\end{beamercolorbox}
 
@@ -181,10 +162,6 @@
 	\insertframenumber{} / \inserttotalframenumber
 	\end{beamercolorbox}
 
-	\begin{beamercolorbox}[wd = .02\paperwidth, ht = 2.75ex, dp = 1.5ex, right]{text in head/foot}
-	\includegraphics[width = 7mm]{style/fig/bionet_logo_black.png}
-	\vspace{-1mm}
-	\end{beamercolorbox}
 	}
 }
 
